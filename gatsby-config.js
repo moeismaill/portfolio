@@ -13,26 +13,23 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-hotjar`,
-    //   options: {
-    //     id: YOUR_HOTJAR_ID,
-    //     sv: YOUR_HOTJAR_SNIPPET_VERSION
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1833966,
+        sv: 6
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Mohammad's Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/polymer.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

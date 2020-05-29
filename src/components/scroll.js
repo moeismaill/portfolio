@@ -25,6 +25,7 @@ export const Scroll = () => {
   height: "120px",
   marginLeft: "0",
   padding: "0",
+  zIndex: "10",
       }}>
         <motion.path
           fill="none"

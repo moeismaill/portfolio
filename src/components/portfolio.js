@@ -18,9 +18,9 @@ const Portfolio = () => {
     return (
         <PortfolioWrapper>
             <div className="title">
-                <span class="line portfolio"></span>
-                <span class="section-title portfolio">Portfolio</span>
-                <span class="line portfolio"></span>
+                <span className="line portfolio"></span>
+                <span className="section-title portfolio">Portfolio</span>
+                <span className="line portfolio"></span>
             </div>
 
             <motion.div
@@ -30,48 +30,129 @@ const Portfolio = () => {
                 borderRadius: ["20%", "20%", "50%", "50%", "20%", "100%"],
                 }}
             >
-            <div className="container">
-                <div className="card">
-                <a href="https://flamboyant-golick-1879b5.netlify.app/"><img src={Airforce} alt="Gallery" /></a>
-                    <h1 className="header">React / Stripe API / Gatsby</h1>
-                    <p className="content">This is a eCommerece website, the payment processor is Stripe.</p>
+                <div className="container">
+                    <motion.div
+                        whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <div className="card">
+                            <a href="https://flamboyant-golick-1879b5.netlify.app/">
+                                <img src={Airforce} alt="Gallery" />
+                                <h1 className="header">React / Stripe API / Gatsby</h1>
+                                <p className="content">This is a eCommerece website, the payment processor is Stripe.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}>
+                        <div className="card">
+                            <a href="https://wordsunlimited8/">
+                                <img src={Blog2} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / Netlify CMS</h1>
+                                <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                            <a href="https://thirsty-rosalind-cad2f7.netlify.app/">
+                                <img src={Travel} alt="Gallery" />
+                                <h1 className="header">HTML / CSS / Javascript</h1>
+                                <p className="content">Are you ready for that vacation you've been waiting for? Well I created a website for your favorite travel agency.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                            <a href="https://pensive-jones-a4039d.netlify.app/">
+                                <img src={Coffee} alt="Gallery" />
+                                <h1 className="header">React / Gatsby</h1>
+                                <p className="content">Are you looking for a coffee shop. Well we have the perfect one for you. Check it out!</p>
+                            </a>
+                        </div>
+                    </motion.div>
+            
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                            <a href="https://quirky-lamarr-c338e9.netlify.app/">
+                                <img src={Modern} alt="Gallery" />
+                                <h1 className="header">React / Gatsby</h1>
+                                <p className="content">Does your company need a portfolio website? You came to the right place.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                        <a href="https://vibrant-mcclintock-4053d2.netlify.app/">
+                            <img src={Cov} alt="Gallery" />
+                            <h1 className="header">React / Charts JS / Material UI</h1>
+                            <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Javascript Mastery</p>
+                        </a>
+                    </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                            <a href="https://zealous-jones-a225d7.netlify.app/">
+                                <img src={Netflix} alt="Gallery" />
+                                <h1 className="header">HTML / CSS / Netlify</h1>
+                                <p className="content">This is a Netflix mock up.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+                    
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                            <a href="https://brave-jennings-f89c4a.netlify.app/">
+                                <img src={Blog} alt="Gallery" />
+                                <h1 className="header">React / Gatsby</h1>
+                                <p className="content">This is a blog.</p>
+                            </a>
+                        </div>
+                    </motion.div>
                 </div>
-                <div className="card">
-                <a href="https://wordsunlimited8/"><img src={Blog2} alt="Gallery" /></a>
-                    <h1 className="header">React / Gatsby / Netlify CMS</h1>
-                    <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
-                </div>
-                <div className="card">
-                <a href="https://thirsty-rosalind-cad2f7.netlify.app/"><img src={Travel} alt="Gallery" /></a>
-                    <h1 className="header">HTML / CSS / Javascript</h1>
-                    <p className="content">Are you ready for that vacation you've been waiting for? Well I created a website for your favorite travel agency.</p>
-                </div>
-                <div className="card">
-                    <a href="https://pensive-jones-a4039d.netlify.app/"><img src={Coffee} alt="Gallery" /></a>
-                    <h1 className="header">React / Gatsby</h1>
-                    <p className="content">Are you looking for a coffee shop. Well we have the perfect one for you. Check it out!</p>
-                </div>
-                <div className="card">
-                    <a href="https://quirky-lamarr-c338e9.netlify.app/"><img src={Modern} alt="Gallery" /></a>
-                    <h1 className="header">React / Gatsby</h1>
-                    <p className="content">Does your company need a portfolio website? You came to the right place.</p>
-                </div>
-                <div className="card">
-                    <a href="https://vibrant-mcclintock-4053d2.netlify.app/"><img src={Cov} alt="Gallery" /></a>
-                    <h1 className="header">React / Charts JS / Material UI</h1>
-                    <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Javascript Mastery</p>
-                </div>
-                <div className="card">
-                <a href="https://zealous-jones-a225d7.netlify.app/"><img src={Netflix} alt="Gallery" /></a>
-                    <h1 className="header">HTML / CSS / Netlify</h1>
-                    <p className="content">This is a Netflix mock up.</p>
-                </div>
-                <div className="card">
-                <a href="https://brave-jennings-f89c4a.netlify.app/"><img src={Blog} alt="Gallery" /></a>
-                    <h1 className="header">React / Gatsby</h1>
-                    <p className="content">This is a blog.</p>
-                </div>
-            </div>
             </motion.div>
         </PortfolioWrapper>
     )
@@ -79,7 +160,7 @@ const Portfolio = () => {
 
 const PortfolioWrapper = styled.section `
 
-margin: 0;
+    margin: 0;
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
@@ -150,12 +231,16 @@ h1+p, p+p {
     cursor:pointer;
   position: relative;
 //   flex: 0 0 240px;
-  width: 400px;
+  width: 375px;
   height: 320px;
   background-color: #333;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(0,0,0, 0.66) 0 30px 30px 0;
+}
+
+.card a, .card h1, .card p {
+    text-decoration-line: none;
 }
 
 
@@ -217,10 +302,15 @@ button {
     &:hover {
         cursor: pointer;
         width: 50%;
-      }
+    }
 
-
-
+    @media screen and (max-width: 380px) {
+        .card {
+            max-width: 350px;
+            width: 350px;
+            height: 270px;
+        }
+    }
 `
 
 export default Portfolio

@@ -6,29 +6,29 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
  const Contact = () => {
     return (
             <EmailWrapper>
-                <section id="contact">
+                <section className="contact">
                 
-                <h1 class="section-header">CONTACT</h1>
+                <h1 className="section-header">CONTACT</h1>
                 
-                <div class="contact-wrapper">
+                <div className="contact-wrapper">
                     
                    
                     
-                    <form class="form-horizontal" method="post" netlify="true">
+                    <form className="form-horizontal" method="post" netlify="true">
                     
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" />
+                    <div className="form-group">
+                        <div className="col-sm-12">
+                        <input type="text" className="form-control" id="name" placeholder="NAME" name="name" />
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" />
+                    <div className="form-group">
+                        <div className="col-sm-12">
+                        <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" />
                         </div>
                     </div>
 
-                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+                    <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
                     
                     <button id="submit" type="submit" value="SEND">Send</button>
                     
@@ -36,38 +36,38 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
                     
                     
                     
-                    <div class="direct-contact-container">
+                    <div className="direct-contact-container">
 
-                        <ul class="contact-list">
-                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chicago | IL</span></i></li>
+                        <ul className="contact-list">
+                        <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chicago | IL</span></i></li>
                         
-                        {/* <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li> */}
+                        {/* <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li> */}
                         
-                        {/* <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li> */}
+                        {/* <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li> */}
                         
                         </ul>
 
                         <hr />
-                        <ul class="social-media-list">
-                        <li><a href="https://github.com/mrismail91" class="contact-icon">
-                            {/* <i class="fa fa-github" aria-hidden="true"></i> */}
+                        <ul className="social-media-list">
+                        <li><a href="https://github.com/mrismail91" className="contact-icon">
+                            {/* <i className="fa fa-github" aria-hidden="true"></i> */}
                             <FaGithub style={{padding: "5px 0 0 0"}} />
                             </a>
                         </li>
-                        <li><a href="https://twitter.com/ismailmri"  class="contact-icon">
-                            {/* <i class="fa fa-twitter" aria-hidden="true"></i> */}
+                        <li><a href="https://twitter.com/ismailmri"  className="contact-icon">
+                            {/* <i className="fa fa-twitter" aria-hidden="true"></i> */}
                             <FaTwitter style={{padding: "5px 0 0 0"}} />
                             </a>
                         </li>
-                        <li><a href="https://instagram.com/ismailmri7" class="contact-icon">
-                            {/* <i class="fa fa-instagram" aria-hidden="true"></i> */}
+                        <li><a href="https://instagram.com/ismailmri7" className="contact-icon">
+                            {/* <i className="fa fa-instagram" aria-hidden="true"></i> */}
                             <FaInstagram style={{padding: "5px 0 0 0"}} />
                             </a>
                         </li>
                         </ul>
                         <hr />
 
-                        <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
+                        <div className="copyright">&copy; ALL RIGHTS RESERVED</div>
 
                     </div>
                     
@@ -84,9 +84,9 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
 
 const EmailWrapper = styled.section`
   
-  #contact {
+  .contact {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #111;
     overflow: hidden;
     padding-bottom: 200px;
@@ -104,7 +104,7 @@ const EmailWrapper = styled.section`
   }
   
   .contact-wrapper {
-    margin: 0 auto;
+    margin: 1rem auto;
     padding-top: 20px;
     position: relative;
     max-width: 800px;
@@ -184,6 +184,7 @@ const EmailWrapper = styled.section`
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
+    text-align: center;
   }
   
   .list-item {
@@ -289,10 +290,21 @@ const EmailWrapper = styled.section`
   }
   
   /* Begin Media Queries*/
+  @media screen and (max-width: 768px) {
+    .form-horizontal {
+      margin-left: 1rem;
+    }
+
+    .direct-contact-container {
+      margin-right: 2rem;
+    }
+  }
+
   @media screen and (max-width: 760px) {
-      #contact {
+      .contact {
           height: 100%;
       }
+
     .section-header {
       font-size: 65px;
     }
@@ -311,7 +323,7 @@ const EmailWrapper = styled.section`
     }
     .direct-contact-container, .form-horizontal {
       float: none;
-      margin: 10px auto;
+      margin: 10px 0;
     }  
     .direct-contact-container {
       margin-top: 60px;
@@ -330,8 +342,8 @@ const EmailWrapper = styled.section`
   }
   
   @media screen and (max-width: 569px) {
-    #contact {
-      height: 1200px;
+    .contact {
+      height: 100%;
       }
     .section-header{
       font-size: 50px;
@@ -341,8 +353,12 @@ const EmailWrapper = styled.section`
       margin: 0 auto;
     }  
     .form-control, textarea {
-      max-width: 340px;
-      margin: 0 auto;
+      max-width: 300px;
+      margin: 1rem auto;
+    }
+
+    button {
+      margin-left: 2.2rem;
     }
     
     .name, .email, textarea {
@@ -370,8 +386,9 @@ const EmailWrapper = styled.section`
   }
   
   @media screen and (max-width: 410px) {
-    .send-button {
-      width: 99%;
+
+    button {
+      width: 50%;
     }
   }
 `

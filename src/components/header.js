@@ -1,12 +1,11 @@
 import React, { useState } from "react"
 import links from "./links"
 import styled from "styled-components"
-// import Logo from "../images/startup-logo.svg"
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 import { Link } from "react-scroll"
 
-const Header = () => {
+const Navbar = () => {
   const [isOpen, setNav] = useState(false)
 
   const toggleNav = () => {
@@ -15,48 +14,119 @@ const Header = () => {
   return (
     <NavWrapper>
       <div className="masthead flex-container">
-        {/* <img src={Logo} alt="Startup Logo" /> */}
-        {/* <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5833 8.33334H31.25L14.8125 34.6458L9.37496 25L18.75 8.33334H10.4166L1.04163 25L10.4166 41.6667H18.75L35.1875 15.3542L40.625 25L31.25 41.6667H39.5833L48.9583 25L39.5833 8.33334Z" fill="white"/>
-        </svg> */}
-
         <div
-      style={{
-        position: "relative",
-        width: 10,
-        height: 10,
-        margin: 8,
-        color: "#fff"
-      }}
-    >
-      <motion.svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 60 50"
-        style={{ position: "absolute", zIndex: "10" }}
-        initial={{ rotateY: 0 }}
-        animate={{ rotateY: 360 }}
-        transition={{
-          ease: "easeInOut",
-          duration: 2,
-          flip: Infinity,
-          repeatDelay: 5
-        }}
-      >
-  
-        <motion.path
-          animate={{ rotate: 360 }}
-          transition={{
-            ease: "easeInOut",
-            flip: Infinity,
-            repeatDelay: 5,
-            duration: 2
+          style={{
+            position: "relative",
+            width: 50,
+            height: 50,
+            margin: 8
           }}
-          d="M39.5833 8.33334H31.25L14.8125 34.6458L9.37496 25L18.75 8.33334H10.4166L1.04163 25L10.4166 41.6667H18.75L35.1875 15.3542L40.625 25L31.25 41.6667H39.5833L48.9583 25L39.5833 8.33334Z" fill="white"/>
-          />
-      </motion.svg>
-    </div>
-
-        {/* <button
+        >
+          <motion.svg
+            viewBox="0 0 50 50" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            initial={{ rotateY: 0 }}
+            animate={{ rotateY: 360 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 2,
+              flip: Infinity,
+              repeatDelay: 5
+            }}
+          >
+            <defs>
+              <path
+                id="a"
+                d="M19.7917 4.16666H15.625L7.40629 17.3229L4.68754 12.5L9.37504 4.16666H5.20837L0.520874 12.5L5.20837 20.8333H9.37504L17.5938 7.67707L20.3125 12.5L15.625 20.8333H19.7917L24.4792 12.5L19.7917 4.16666Z"
+              />
+              <clipPath id="b">
+                <use xlinkHref="#a" />
+              </clipPath>
+              <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="100%">
+                <motion.stop
+                  stopColor="#2B00FF"
+                  animate={{
+                    stopColor: [
+                      "#0055FF",
+                      "#FFF9DA",
+                      "#E7FFF7",
+                      "#FFC6A8",
+                      "#FF7744",
+                      "#F3F2F2"
+                    ]
+                  }}
+                  transition={{
+                    yoyo: Infinity,
+                    ease: "linear",
+                    duration: 8
+                  }}
+                  offset="25%"
+                />
+                <motion.stop
+                  stopColor="#0055FF"
+                  animate={{
+                    stopColor: [
+                      "#0055FF",
+                      "#FFF9DA",
+                      "#FFC6A8",
+                      "#FF7744",
+                      "#2B00FF"
+                    ]
+                  }}
+                  transition={{
+                    yoyo: Infinity,
+                    ease: "linear",
+                    duration: 8
+                  }}
+                  offset="50%"
+                />
+                <motion.stop
+                  stopColor="#D4504C"
+                  animate={{
+                    stopColor: ["#FFF9DA", "#E7FFF7", "#0055FF"]
+                  }}
+                  transition={{
+                    yoyo: Infinity,
+                    ease: "linear",
+                    duration: 8
+                  }}
+                  offset="75%"
+                />
+                <motion.stop
+                  stopColor="#FF7744"
+                  animate={{
+                    stopColor: ["#D4504C", "#2B00FF", "#E7FFF7", "#FFF9DA"]
+                  }}
+                  transition={{
+                    yoyo: Infinity,
+                    ease: "linear",
+                    duration: 8
+                  }}
+                  offset="100%"
+                />
+              </linearGradient>
+            </defs>
+            <use
+              fill="transparent"
+              stroke="url(#linear)"
+              strokeWidth="4"
+              clipPath="url(#b)"
+              xlinkHref="#a"
+            />
+            <motion.path
+              animate={{ rotate: 360 }}
+              transition={{
+                ease: "easeInOut",
+                flip: Infinity,
+                repeatDelay: 5,
+                duration: 2
+              }}
+              d="M19.7917 4.16666H15.625L7.40629 17.3229L4.68754 12.5L9.37504 4.16666H5.20837L0.520874 12.5L5.20837 20.8333H9.37504L17.5938 7.67707L20.3125 12.5L15.625 20.8333H19.7917L24.4792 12.5L19.7917 4.16666Z"
+            />
+          </motion.svg>
+        </div>
+        <button
           className={
             isOpen
               ? `${"toggle-btn"} ${"toggle-btn-active"}`
@@ -68,7 +138,8 @@ const Header = () => {
           <span></span>
           <span></span>
           <span></span>
-        </button> */}
+        </button>
+      </div>
       <ul
         className={isOpen ? `${"nav-links"} ${"show-nav"}` : `${"nav-links"}`}
       >
@@ -89,7 +160,6 @@ const Header = () => {
           )
         })}
       </ul>
-    </div>
     </NavWrapper>
   )
 }
@@ -111,14 +181,18 @@ const NavWrapper = styled.nav`
     justify-content: space-between;
 
     svg {
-      width: 90px;
+      width: 65px;
 
       @media (min-width: 768px) {
-        width: 100px;
+        width: 65px;
       }
 
       @media (min-width: 1200px) {
-        width: 120px;
+        width: 90px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 100px;
       }
     }
   }
@@ -130,6 +204,7 @@ const NavWrapper = styled.nav`
     position: fixed;
     text-align: center;
     background: linear-gradient(45deg, #060c21, #0d0139);
+    margin: 0;
     height: 100%;
     top: 0;
     bottom: 0;
@@ -139,7 +214,6 @@ const NavWrapper = styled.nav`
     transition: 0.3s ease-in;
     list-style: none;
     padding-left: 0;
-    margin: 1rem;
 
     li {
       list-style: none;
@@ -234,14 +308,6 @@ const NavWrapper = styled.nav`
       }
     }
   }
-
-  @media (max-width: 768px) {
-    .nav-links{
-      font-size: .5rem;
-      margin: 1rem auto;
-    }
-
-  }
 `
 
-export default Header
+export default Navbar
