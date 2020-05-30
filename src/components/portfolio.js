@@ -55,7 +55,7 @@ const Portfolio = () => {
                             borderRadius: "100%"
                         }}>
                         <div className="card">
-                            <a href="https://wordsunlimited8/">
+                            <a href="https://wordsunlimited8.com">
                                 <img src={Blog2} alt="Gallery" />
                                 <h1 className="header">React / Gatsby / Netlify CMS</h1>
                                 <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
