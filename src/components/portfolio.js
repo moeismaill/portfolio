@@ -9,6 +9,8 @@ import Airforce from '../images/airforce.png';
 import Coffee from '../images/coffee.png';
 import Modern from '../images/modern.png';
 import Cov from '../images/cov.png';
+import Gsap from '../images/gsap.png';
+
 
 
 
@@ -119,6 +121,21 @@ const Portfolio = () => {
                             <img src={Cov} alt="Gallery" />
                             <h1 className="header">React / Charts JS / Material UI</h1>
                             <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Javascript Mastery</p>
+                        </a>
+                    </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                        <a href="https://nifty-ramanujan-edf892.netlify.app/">
+                            <img src={Gsap} alt="Gallery" />
+                            <h1 className="header">React / Gsap</h1>
+                            <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Wrong Akram</p>
                         </a>
                     </div>
                     </motion.div>
