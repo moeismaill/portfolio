@@ -49,21 +49,21 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
 
                         <hr />
                         <ul className="social-media-list">
-                        <li><a href="https://github.com/mrismail91" className="contact-icon">
+                          <a href="https://github.com/mrismail91" className="contact-icon">
                             {/* <i className="fa fa-github" aria-hidden="true"></i> */}
                             <FaGithub style={{padding: "5px 0 0 0"}} />
-                            </a>
-                        </li>
-                        <li><a href="https://twitter.com/ismailmri"  className="contact-icon">
+                          </a>
+                        
+                          <a href="https://twitter.com/ismailmri"  className="contact-icon">
                             {/* <i className="fa fa-twitter" aria-hidden="true"></i> */}
                             <FaTwitter style={{padding: "5px 0 0 0"}} />
-                            </a>
-                        </li>
-                        <li><a href="https://instagram.com/ismailmri7" className="contact-icon">
+                          </a>
+                        
+                          <a href="https://instagram.com/ismailmri7" className="contact-icon">
                             {/* <i className="fa fa-instagram" aria-hidden="true"></i> */}
                             <FaInstagram style={{padding: "5px 0 0 0"}} />
-                            </a>
-                        </li>
+                          </a>
+                      
                         </ul>
                         <hr />
 
@@ -230,11 +230,11 @@ const EmailWrapper = styled.section`
     width: 100%;
   }
   
-  .social-media-list li a {
+  .social-media-list a {
     color: #fff;
   }
   
-  .social-media-list li {
+  .social-media-list a {
     position: relative; 
     top: 0;
     left: -20px;
@@ -250,7 +250,7 @@ const EmailWrapper = styled.section`
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:after {
+  .social-media-list a:after {
     content: '';
     position: absolute;
     top: 0;
@@ -264,17 +264,17 @@ const EmailWrapper = styled.section`
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:hover {
+  .social-media-list a:hover {
     background-color: #fff; 
   }
   
-  .social-media-list li:hover:after {
+  .social-media-list a:hover:after {
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
+  .social-media-list a:hover {
     color: #111;
   }
   
@@ -329,12 +329,12 @@ const EmailWrapper = styled.section`
       margin-top: 60px;
       max-width: 300px;
     }    
-    .social-media-list li {
+    .social-media-list a {
       height: 60px;
       width: 60px;
       line-height: 60px;
     }
-    .social-media-list li:after {
+    .social-media-list a:after {
       width: 60px;
       height: 60px;
       line-height: 60px;
@@ -371,13 +371,13 @@ const EmailWrapper = styled.section`
     .social-media-list {
       left: 0;
     }
-    .social-media-list li {
+    .social-media-list a {
       height: 55px;
       width: 55px;
       line-height: 55px;
       font-size: 2rem;
     }
-    .social-media-list li:after {
+    .social-media-list a:after {
       width: 55px;
       height: 55px;
       line-height: 55px;
