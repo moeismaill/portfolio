@@ -148,7 +148,7 @@ const Portfolio = () => {
                             <a href="https://brave-jennings-f89c4a.netlify.app/">
                                 <img src={Blog} alt="Gallery" />
                                 <h1 className="header">React / Gatsby</h1>
-                                <p className="content">This is a blog.</p>
+                                <p className="content">Mental health blog.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -268,12 +268,12 @@ opacity: 0;
 
 .card:hover h1, .card:hover p, .card:hover button {
     opacity: 1;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   position: relative;
   justify-content: center;
   text-align: center;
   color: #fff;
-  transform: translateY(40%);
+//   transform: translateY(40%);
   transition: 0.6s .5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
