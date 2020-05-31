@@ -10,6 +10,8 @@ import Coffee from '../images/coffee.png';
 import Modern from '../images/modern.png';
 import Cov from '../images/cov.png';
 import Gsap from '../images/gsap.png';
+import Expense from '../images/expense.png';
+
 
 
 
@@ -91,6 +93,21 @@ const Portfolio = () => {
                                 <img src={Coffee} alt="Gallery" />
                                 <h1 className="header">React / Gatsby</h1>
                                 <p className="content">Are you looking for a coffee shop. Well we have the perfect one for you. Check it out!</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                    whileTap={{
+                        scale: 0.8,
+                        rotate: 360,
+                        borderRadius: "100%"
+                    }}>
+                        <div className="card">
+                            <a href="https://optimistic-johnson-bb4a52.netlify.app/">
+                                <img src={Expense} alt="Gallery" />
+                                <h1 className="header">React / Hooks /Context API</h1>
+                                <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Traversy Media</p>
                             </a>
                         </div>
                     </motion.div>
