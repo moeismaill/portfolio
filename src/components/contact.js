@@ -49,7 +49,7 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
 
                         <hr />
                         <ul className="social-media-list">
-                          <a href="https://github.com/mrismail91" className="contact-icon">
+                          <a href="https://github.com/ismailmri" className="contact-icon">
                             {/* <i className="fa fa-github" aria-hidden="true"></i> */}
                             <FaGithub style={{padding: "5px 0 0 0"}} />
                           </a>
