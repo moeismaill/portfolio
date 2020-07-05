@@ -4,7 +4,6 @@ import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
 import { motion } from "framer-motion"
 import Typist from 'react-typist';
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -67,7 +66,6 @@ const Banner = () => {
                 </span>
               </span>
             </Typist>
-            <KeyboardArrowDownIcon className="bounce" style={{fontSize: "100px", marginTop: "7rem"}} />
 
           </motion.h1>
           {/* <motion.p
@@ -149,7 +147,7 @@ animation: bounce 2s infinite;
 }
 
 .hero-image {
-    height: 100vh;
+    height: 96vh;
    
 }
 

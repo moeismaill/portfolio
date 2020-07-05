@@ -11,6 +11,9 @@ import Modern from '../images/modern.png';
 import Cov from '../images/cov.png';
 import Gsap from '../images/gsap.png';
 import Expense from '../images/expense.png';
+import Jumpstart from '../images/jumpstart.png';
+import Lynch from '../images/lynch.png';
+
 
 
 
@@ -35,6 +38,40 @@ const Portfolio = () => {
                 }}
             >
                 <div className="container">
+                <motion.div
+                        whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <div className="card">
+                            <a href="https://goofy-yalow-631516.netlify.app/#footer">
+                                <img src={Lynch} alt="Gallery" />
+                                <h1 className="header">React / Shopify</h1>
+                                <p className="content">An e-commerce website using Shopify and React.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <div className="card">
+                            <a href="https://lucid-engelbart-e13bc0.netlify.app/">
+                                <img src={Jumpstart} alt="Gallery" />
+                                <h1 className="header">React / SnipCart / Gatsby</h1>
+                                <p className="content">An e-commerce website using Contentful and SnipCart.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
                     <motion.div
                         whileHover={{ scale: .9, rotate: 360 }}
                         whileTap={{
@@ -47,7 +84,7 @@ const Portfolio = () => {
                             <a href="https://flamboyant-golick-1879b5.netlify.app/">
                                 <img src={Airforce} alt="Gallery" />
                                 <h1 className="header">React / Stripe API / Gatsby</h1>
-                                <p className="content">This is a eCommerece website, the payment processor is Stripe.</p>
+                                <p className="content">This is an e-commerce website, the payment processor is Stripe.</p>
                             </a>
                         </div>
                     </motion.div>

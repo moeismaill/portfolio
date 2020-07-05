@@ -147,7 +147,6 @@ const Navbar = () => {
           return (
             <li key={index}>
               <Link
-                activeClass="active"
                 to={item.text}
                 spy={true}
                 smooth={true}
@@ -169,6 +168,8 @@ const NavWrapper = styled.nav`
   z-index: 10;
   top: 0;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   left: 0;
   right: 0;
   display: flex;
@@ -285,7 +286,7 @@ const NavWrapper = styled.nav`
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 370px) {
     .masthead {
       flex-direction: column;
       justify-content: center;
