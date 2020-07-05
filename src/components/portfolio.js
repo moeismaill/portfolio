@@ -71,23 +71,6 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}
-                    >
-                        <div className="card">
-                            <a href="https://flamboyant-golick-1879b5.netlify.app/">
-                                <img src={Airforce} alt="Gallery" />
-                                <h1 className="header">React / Stripe API / Gatsby</h1>
-                                <p className="content">This is an e-commerce website, the payment processor is Stripe.</p>
-                            </a>
-                        </div>
-                    </motion.div>
-
                     <motion.div whileHover={{ scale: .9, rotate: 360 }}
                     whileTap={{
                         scale: 0.8,
@@ -134,6 +117,24 @@ const Portfolio = () => {
                             </a>
                         </div>
                     </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <div className="card">
+                            <a href="https://flamboyant-golick-1879b5.netlify.app/">
+                                <img src={Airforce} alt="Gallery" />
+                                <h1 className="header">React / Stripe API / Gatsby</h1>
+                                <p className="content">This is an e-commerce website, the payment processor is Stripe.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
 
                     <motion.div whileHover={{ scale: .9, rotate: 360 }}
                     whileTap={{
@@ -193,21 +194,6 @@ const Portfolio = () => {
                             <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Wrong Akram</p>
                         </a>
                     </div>
-                    </motion.div>
-
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
-                        <div className="card">
-                            <a href="https://zealous-jones-a225d7.netlify.app/">
-                                <img src={Netflix} alt="Gallery" />
-                                <h1 className="header">HTML / CSS / Netlify</h1>
-                                <p className="content">This is a Netflix mock up.</p>
-                            </a>
-                        </div>
                     </motion.div>
                     
                     <motion.div whileHover={{ scale: .9, rotate: 360 }}
