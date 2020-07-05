@@ -38,22 +38,6 @@ const Portfolio = () => {
                 }}
             >
                 <div className="container">
-                <motion.div
-                        whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}
-                    >
-                        <div className="card">
-                            <a href="https://goofy-yalow-631516.netlify.app/#footer">
-                                <img src={Lynch} alt="Gallery" />
-                                <h1 className="header">React / Shopify</h1>
-                                <p className="content">An e-commerce website using Shopify and React.</p>
-                            </a>
-                        </div>
-                    </motion.div>
 
                     <motion.div
                         whileHover={{ scale: .9, rotate: 360 }}
@@ -68,6 +52,21 @@ const Portfolio = () => {
                                 <img src={Jumpstart} alt="Gallery" />
                                 <h1 className="header">React / SnipCart / Gatsby</h1>
                                 <p className="content">An e-commerce website using Contentful and SnipCart.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}>
+                        <div className="card">
+                            <a href="https://wordsunlimited8.com">
+                                <img src={Blog2} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / Netlify CMS</h1>
+                                <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -90,21 +89,6 @@ const Portfolio = () => {
                     </motion.div>
 
                     <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
-                        <div className="card">
-                            <a href="https://wordsunlimited8.com">
-                                <img src={Blog2} alt="Gallery" />
-                                <h1 className="header">React / Gatsby / Netlify CMS</h1>
-                                <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
-                            </a>
-                        </div>
-                    </motion.div>
-
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
                     whileTap={{
                         scale: 0.8,
                         rotate: 360,
@@ -115,6 +99,23 @@ const Portfolio = () => {
                                 <img src={Travel} alt="Gallery" />
                                 <h1 className="header">HTML / CSS / Javascript</h1>
                                 <p className="content">Are you ready for that vacation you've been waiting for? Well I created a website for your favorite travel agency.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <div className="card">
+                            <a href="https://goofy-yalow-631516.netlify.app/#footer">
+                                <img src={Lynch} alt="Gallery" />
+                                <h1 className="header">React / Shopify</h1>
+                                <p className="content">An e-commerce website using Shopify and React.</p>
                             </a>
                         </div>
                     </motion.div>
