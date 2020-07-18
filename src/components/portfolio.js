@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
 import { motion } from "framer-motion"
-import Netflix from '../images/netflix.png';
 import Blog from '../images/blog.png';
 import Blog2 from '../images/blog2.png';
 import Travel from '../images/travel.png';
@@ -9,10 +8,12 @@ import Airforce from '../images/airforce.png';
 import Coffee from '../images/coffee.png';
 import Modern from '../images/modern.png';
 import Cov from '../images/cov.png';
-import Gsap from '../images/gsap.png';
 import Expense from '../images/expense.png';
 import Jumpstart from '../images/jumpstart.png';
 import Lynch from '../images/lynch.png';
+import Avilio from '../images/avilio.png';
+import Therapy from '../images/therapy.png';
+
 
 
 
@@ -39,6 +40,52 @@ const Portfolio = () => {
             >
                 <div className="container">
 
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}>
+                        <div className="card">
+                            <a href="https://wordsunlimited8.com">
+                                <img src={Blog2} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / Netlify CMS</h1>
+                                <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}>
+                        <div className="card">
+                            <a href="https://jovial-goldberg-a8c0d0.netlify.app/">
+                                <img src={Therapy} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / CSS / SCSS </h1>
+                                <p className="content">Giving a psychiatric clinic web presents with fun animations!</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}>
+                        <div className="card">
+                            <a href="https://eager-boyd-18ba46.netlify.app/">
+                                <img src={Avilio} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / Netlify </h1>
+                                <p className="content">This is inspired from a Figma design, I bought it to reality.</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
                     <motion.div
                         whileHover={{ scale: .9, rotate: 360 }}
                         whileTap={{
@@ -52,21 +99,6 @@ const Portfolio = () => {
                                 <img src={Jumpstart} alt="Gallery" />
                                 <h1 className="header">React / SnipCart / Gatsby</h1>
                                 <p className="content">An e-commerce website using Contentful and SnipCart.</p>
-                            </a>
-                        </div>
-                    </motion.div>
-
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
-                        <div className="card">
-                            <a href="https://wordsunlimited8.com">
-                                <img src={Blog2} alt="Gallery" />
-                                <h1 className="header">React / Gatsby / Netlify CMS</h1>
-                                <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -161,7 +193,7 @@ const Portfolio = () => {
                             <a href="https://quirky-lamarr-c338e9.netlify.app/">
                                 <img src={Modern} alt="Gallery" />
                                 <h1 className="header">React / Gatsby</h1>
-                                <p className="content">Does your company need a portfolio website? You came to the right place.</p>
+                                <p className="content">Does your company need a portfolio website? You've come to the right place.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -177,21 +209,6 @@ const Portfolio = () => {
                             <img src={Cov} alt="Gallery" />
                             <h1 className="header">React / Charts JS / Material UI</h1>
                             <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Javascript Mastery</p>
-                        </a>
-                    </div>
-                    </motion.div>
-
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
-                        <div className="card">
-                        <a href="https://nifty-ramanujan-edf892.netlify.app/">
-                            <img src={Gsap} alt="Gallery" />
-                            <h1 className="header">React / Gsap</h1>
-                            <p className="content">This is a tutorial I followed on Youtube. YouTube Channel is Wrong Akram</p>
                         </a>
                     </div>
                     </motion.div>

@@ -40,27 +40,21 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
 
                         <ul className="contact-list">
                         <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chicago | IL</span></i></li>
-                        
-                        {/* <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li> */}
-                        
-                        {/* <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li> */}
+                    
                         
                         </ul>
 
                         <hr />
                         <ul className="social-media-list">
                           <a href="https://github.com/ismailmri" className="contact-icon">
-                            {/* <i className="fa fa-github" aria-hidden="true"></i> */}
                             <FaGithub style={{padding: "5px 0 0 0"}} />
                           </a>
                         
                           <a href="https://twitter.com/ismailmri"  className="contact-icon">
-                            {/* <i className="fa fa-twitter" aria-hidden="true"></i> */}
                             <FaTwitter style={{padding: "5px 0 0 0"}} />
                           </a>
                         
                           <a href="https://instagram.com/ismailmri7" className="contact-icon">
-                            {/* <i className="fa fa-instagram" aria-hidden="true"></i> */}
                             <FaInstagram style={{padding: "5px 0 0 0"}} />
                           </a>
                       
@@ -152,8 +146,6 @@ const EmailWrapper = styled.section`
     padding: 0 20px;
     height: 50px;
     width: 400px;
-    // text-align: center;
-    // line-height: 50px;
     color: #fff;
     font-size: 0.85rem;
     letter-spacing: 0.25rem;
