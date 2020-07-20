@@ -14,63 +14,57 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
                     
                    
                     
-                    <form className="form-horizontal" method="post" netlify="true">
-                    
-                    <div className="form-group">
-                        <div className="col-sm-12">
-                        <input type="text" className="form-control" id="name" placeholder="NAME" name="name" />
-                        </div>
-                    </div>
+                  <form className="form-horizontal" method="post" netlify="true">
+                  
+                  <div className="form-group">
+                      <div className="col-sm-12">
+                      <input type="text" className="form-control" id="name" placeholder="NAME" name="name" />
+                      </div>
+                  </div>
 
-                    <div className="form-group">
-                        <div className="col-sm-12">
-                        <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" />
-                        </div>
-                    </div>
+                  <div className="form-group">
+                      <div className="col-sm-12">
+                      <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" />
+                      </div>
+                  </div>
 
-                    <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+                  <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+                  
+                  <button id="submit" type="submit" value="SEND">Send</button>
+                  
+                  </form>
                     
-                    <button id="submit" type="submit" value="SEND">Send</button>
-                    
-                    </form>
                     
                     
-                    
-                    <div className="direct-contact-container">
+                  <div className="direct-contact-container">
 
-                        <ul className="contact-list">
-                        <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chicago | IL</span></i></li>
-                    
-                        
-                        </ul>
+                  <ul className="contact-list">
+                  <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chicago | IL</span></i></li>
+              
+                  
+                  </ul>
 
-                        <hr />
-                        <ul className="social-media-list">
-                          <a href="https://github.com/ismailmri" className="contact-icon">
-                            <FaGithub style={{padding: "5px 0 0 0"}} />
-                          </a>
-                        
-                          <a href="https://twitter.com/ismailmri"  className="contact-icon">
-                            <FaTwitter style={{padding: "5px 0 0 0"}} />
-                          </a>
-                        
-                          <a href="https://instagram.com/ismailmri7" className="contact-icon">
-                            <FaInstagram style={{padding: "5px 0 0 0"}} />
-                          </a>
-                      
-                        </ul>
-                        <hr />
-
-                        <div className="copyright">&copy; ALL RIGHTS RESERVED</div>
-
-                    </div>
-                    
-                </div>
+                  <hr />
+                  <ul className="social-media-list">
+                    <a href="https://github.com/ismailmri" className="contact-icon">
+                      <FaGithub style={{padding: "5px 0 0 0"}} />
+                    </a>
+                  
+                    <a href="https://twitter.com/ismailmri"  className="contact-icon">
+                      <FaTwitter style={{padding: "5px 0 0 0"}} />
+                    </a>
+                  
+                    <a href="https://instagram.com/ismailmri7" className="contact-icon">
+                      <FaInstagram style={{padding: "5px 0 0 0"}} />
+                    </a>
                 
-                </section>  
-  
-  
-            
+                  </ul>
+                  <hr />
+
+                  <div className="copyright">&copy; ALL RIGHTS RESERVED</div>
+                  </div>
+                </div>                
+              </section>
             </EmailWrapper>  
   
     )
