@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Header from "./header"
+// import { PopupWidget } from 'react-calendly'
 // import Footer from "./footer"
 import './layout.css'
 
@@ -8,6 +9,13 @@ const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
       <Header />
+        {/* <PopupWidget 
+        color="#FF1493"
+        text="Make an Appointment"
+        textColor="#fff"
+        url="https://calendly.com/ismailmri"
+        overflow-auto
+        /> */}
       <div className="layout">{children}</div>
       {/* <Footer /> */}
     </LayoutWrapper>

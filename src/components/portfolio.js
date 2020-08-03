@@ -10,15 +10,9 @@ import Modern from '../images/modern.png';
 import Cov from '../images/cov.png';
 import Expense from '../images/expense.png';
 import Jumpstart from '../images/jumpstart.png';
-import Lynch from '../images/lynch.png';
 import Avilio from '../images/avilio.png';
 import Therapy from '../images/therapy.png';
-
-
-
-
-
-
+import Skincare from '../images/skincare.png';
 
 
 
@@ -31,13 +25,6 @@ const Portfolio = () => {
                 <span className="line portfolio"></span>
             </div>
 
-            <motion.div
-                animate={{
-                scale: [1, 2, 2, 1, 1],
-                rotate: [0, 0, 270, 270, 0],
-                borderRadius: ["20%", "20%", "50%", "50%", "20%", "100%"],
-                }}
-            >
                 <div className="container">
 
 
@@ -49,7 +36,7 @@ const Portfolio = () => {
                         }}>
                         <div className="card">
                             <a href="https://wordsunlimited8.com">
-                                <img src={Blog2} alt="Gallery" />
+                                <img src={Blog} alt="Gallery" />
                                 <h1 className="header">React / Gatsby / Netlify CMS</h1>
                                 <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
                             </a>
@@ -63,25 +50,10 @@ const Portfolio = () => {
                             borderRadius: "100%"
                         }}>
                         <div className="card">
-                            <a href="https://jovial-goldberg-a8c0d0.netlify.app/">
-                                <img src={Therapy} alt="Gallery" />
+                            <a href="https://loving-brown-0c6c83.netlify.app/">
+                                <img src={Skincare} alt="Spa" />
                                 <h1 className="header">React / Gatsby / CSS / SCSS </h1>
-                                <p className="content">Giving a psychiatric clinic web presents with fun animations!</p>
-                            </a>
-                        </div>
-                    </motion.div>
-
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
-                        <div className="card">
-                            <a href="https://eager-boyd-18ba46.netlify.app/">
-                                <img src={Avilio} alt="Gallery" />
-                                <h1 className="header">React / Gatsby / Netlify </h1>
-                                <p className="content">This is inspired from a Figma design, I bought it to reality.</p>
+                                <p className="content">Opening up a Spa, we have the perfect website for you!</p>
                             </a>
                         </div>
                     </motion.div>
@@ -118,19 +90,32 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        whileHover={{ scale: .9, rotate: 360 }}
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
                         whileTap={{
                             scale: 0.8,
                             rotate: 360,
                             borderRadius: "100%"
-                        }}
-                    >
+                        }}>
                         <div className="card">
-                            <a href="https://goofy-yalow-631516.netlify.app/#footer">
-                                <img src={Lynch} alt="Gallery" />
-                                <h1 className="header">React / Shopify</h1>
-                                <p className="content">An e-commerce website using Shopify and React.</p>
+                            <a href="https://jovial-goldberg-a8c0d0.netlify.app/">
+                                <img src={Therapy} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / CSS / SCSS </h1>
+                                <p className="content">Giving a psychiatric clinic web presents with fun animations!</p>
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: 360,
+                            borderRadius: "100%"
+                        }}>
+                        <div className="card">
+                            <a href="https://eager-boyd-18ba46.netlify.app/">
+                                <img src={Avilio} alt="Gallery" />
+                                <h1 className="header">React / Gatsby / Netlify </h1>
+                                <p className="content">From a Figma design to development.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -221,14 +206,13 @@ const Portfolio = () => {
                     }}>
                         <div className="card">
                             <a href="https://brave-jennings-f89c4a.netlify.app/">
-                                <img src={Blog} alt="Gallery" />
+                                <img src={Blog2} alt="Gallery" />
                                 <h1 className="header">React / Gatsby</h1>
-                                <p className="content">Mental health blog.</p>
+                                <p className="content">All around blog for mental health.</p>
                             </a>
                         </div>
                     </motion.div>
                 </div>
-            </motion.div>
         </PortfolioWrapper>
     )
 }
