@@ -41,9 +41,9 @@ const Banner = () => {
               <span>
                 Mohammad is a <Typist.Backspace count={0} delay={1000} />
                 <span>
-                  {' dream-maker'} <Typist.Backspace count={12} delay={1500} />
+                  {' visionary'} <Typist.Backspace count={10} delay={1500} />
                   <span>
-                    {'hard-worker'} <Typist.Backspace count={12} delay={1500} />
+                    {'dream-maker'} <Typist.Backspace count={12} delay={1500} />
                     <span>
                       {'thinker'}
                       <Typist.Backspace count={7} delay={1500} />
