@@ -18,17 +18,17 @@ import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
                   
                   <div className="form-group">
                       <div className="col-sm-12">
-                      <input type="text" className="form-control" id="name" placeholder="NAME" name="name" />
+                      <input type="text" className="form-control" id="name" placeholder="Name" name="name" />
                       </div>
                   </div>
 
                   <div className="form-group">
                       <div className="col-sm-12">
-                      <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" />
+                      <input type="email" className="form-control" id="email" placeholder="Email" name="email" />
                       </div>
                   </div>
 
-                  <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+                  <textarea className="form-control" rows="10" placeholder="Message" name="message"></textarea>
                   
                   <button id="submit" type="submit" value="SEND">Send</button>
                   
@@ -127,7 +127,6 @@ const EmailWrapper = styled.section`
         background-color: #0b132e;
         color: #fff;
         border: #fff solid 1px;
-        text-transform: uppercase;
         position: relative;
         box-sizing: border-box;
         margin: 1rem 0;

@@ -38,7 +38,7 @@ const Portfolio = () => {
                             <a href="https://wordsunlimited8.com">
                                 <img src={Blog} alt="Gallery" />
                                 <h1 className="header">React / Gatsby / Netlify CMS</h1>
-                                <p className="content">I created this blog for a client, for the backend I used Netlify CMS.</p>
+                                <p className="content">A personal blog using React for the front-end and Netlify CMS for the back-end.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -70,7 +70,7 @@ const Portfolio = () => {
                             <a href="https://lucid-engelbart-e13bc0.netlify.app/">
                                 <img src={Jumpstart} alt="Gallery" />
                                 <h1 className="header">React / SnipCart / Gatsby</h1>
-                                <p className="content">An e-commerce website using Contentful and SnipCart.</p>
+                                <p className="content">An e-commerce website using Contentful CMS and SnipCart.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -147,7 +147,7 @@ const Portfolio = () => {
                             <a href="https://flamboyant-golick-1879b5.netlify.app/">
                                 <img src={Airforce} alt="Gallery" />
                                 <h1 className="header">React / Stripe API / Gatsby</h1>
-                                <p className="content">This is an e-commerce website, the payment processor is Stripe.</p>
+                                <p className="content">A one product e-commerce website using React JS and Stripe to process payments.</p>
                             </a>
                         </div>
                     </motion.div>
@@ -208,7 +208,7 @@ const Portfolio = () => {
                             <a href="https://brave-jennings-f89c4a.netlify.app/">
                                 <img src={Blog2} alt="Gallery" />
                                 <h1 className="header">React / Gatsby</h1>
-                                <p className="content">All around blog for mental health.</p>
+                                <p className="content">All around blog to spread awareness about mental health.</p>
                             </a>
                         </div>
                     </motion.div>
