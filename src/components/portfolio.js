@@ -26,14 +26,7 @@ const Portfolio = () => {
             </div>
 
                 <div className="container">
-
-
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://wordsunlimited8.com">
                                 <img src={Blog} alt="Gallery" />
@@ -43,12 +36,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://loving-brown-0c6c83.netlify.app/">
                                 <img src={Skincare} alt="Spa" />
@@ -58,14 +46,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}
-                    >
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://lucid-engelbart-e13bc0.netlify.app/">
                                 <img src={Jumpstart} alt="Gallery" />
@@ -75,12 +56,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://thirsty-rosalind-cad2f7.netlify.app/">
                                 <img src={Travel} alt="Gallery" />
@@ -90,12 +66,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://jovial-goldberg-a8c0d0.netlify.app/">
                                 <img src={Therapy} alt="Gallery" />
@@ -105,12 +76,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://eager-boyd-18ba46.netlify.app/">
                                 <img src={Avilio} alt="Gallery" />
@@ -120,12 +86,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://pensive-jones-a4039d.netlify.app/">
                                 <img src={Coffee} alt="Gallery" />
@@ -135,14 +96,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        whileHover={{ scale: .9, rotate: 360 }}
-                        whileTap={{
-                            scale: 0.8,
-                            rotate: 360,
-                            borderRadius: "100%"
-                        }}
-                    >
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://flamboyant-golick-1879b5.netlify.app/">
                                 <img src={Airforce} alt="Gallery" />
@@ -153,12 +107,7 @@ const Portfolio = () => {
                     </motion.div>
 
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://optimistic-johnson-bb4a52.netlify.app/">
                                 <img src={Expense} alt="Gallery" />
@@ -168,12 +117,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
             
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://quirky-lamarr-c338e9.netlify.app/">
                                 <img src={Modern} alt="Gallery" />
@@ -183,12 +127,7 @@ const Portfolio = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                         <a href="https://vibrant-mcclintock-4053d2.netlify.app/">
                             <img src={Cov} alt="Gallery" />
@@ -198,12 +137,7 @@ const Portfolio = () => {
                     </div>
                     </motion.div>
                     
-                    <motion.div whileHover={{ scale: .9, rotate: 360 }}
-                    whileTap={{
-                        scale: 0.8,
-                        rotate: 360,
-                        borderRadius: "100%"
-                    }}>
+                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
                         <div className="card">
                             <a href="https://brave-jennings-f89c4a.netlify.app/">
                                 <img src={Blog2} alt="Gallery" />
