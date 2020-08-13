@@ -45,17 +45,14 @@ const Banner = () => {
                   <span>
                     {'dream-maker'} <Typist.Backspace count={12} delay={1500} />
                     <span>
-                      {'thinker'}
-                      <Typist.Backspace count={7} delay={1500} />
-
+                      {'web-developer'}
+                      <Typist.Backspace count={13} delay={1500} />
                       <span>
-                        {'web-developer'}
-                        <Typist.Backspace count={13} delay={1500} />
-
+                        {'thinker'}
+                        <Typist.Backspace count={7} delay={1500} />
                         <span>
                           {'team player'}
                           <Typist.Backspace count={11} delay={1500} />
-
                           <span>
                             {'problem-solver'}
                           </span>

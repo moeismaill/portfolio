@@ -26,7 +26,7 @@ const Portfolio = () => {
             </div>
 
                 <div className="container">
-                    <motion.div whileHover={{ scale: [1, 1.25, 1.25, 1, 1]}}>
+                    <motion.div whileHover={{ scale: [1, .75, .75, 1, 1]}}>
                         <div className="card">
                             <a href="https://wordsunlimited8.com">
                                 <img src={Blog} alt="Gallery" />
