@@ -44,9 +44,6 @@ const Banner = () => {
                   {' visionary'} <Typist.Backspace count={10} delay={1500} />
                   <span>
                     {'dream-maker'} <Typist.Backspace count={12} delay={1500} />
-                    <span>
-                      {'web-developer'}
-                      <Typist.Backspace count={13} delay={1500} />
                       <span>
                         {'thinker'}
                         <Typist.Backspace count={7} delay={1500} />
@@ -58,12 +55,10 @@ const Banner = () => {
                           </span>
                         </span>
                       </span>
-                    </span>
                   </span>
                 </span>
               </span>
             </Typist>
-
           </motion.h1>
         </div>
       </BackgroundImage>
