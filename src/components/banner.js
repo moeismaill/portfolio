@@ -130,7 +130,6 @@ animation: bounce 2s infinite;
     height: 96vh;
    
 }
-
   .gatsby-image-wrapper {
     height: 100vh;
     color: #fff;
@@ -141,7 +140,7 @@ animation: bounce 2s infinite;
       text-align: center;
       height: 100%;
       width: 100%;
-      max-width: 400px;
+      max-width: 100%;
       padding: 0 20px;
       display: flex;
       flex-direction: column;
